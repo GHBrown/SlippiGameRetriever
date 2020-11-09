@@ -11,5 +11,6 @@ The executable provided essentially opens your existing Dolphin.exe while provid
 5. Use SlippiGameRetriever.exe or a shortcut to SlippiGameRetriever.exe as you would use Dolphin.exe or a shortcut to Dolphin.exe. 
 
 ## Hotkeys
-&#8595;: copies the latest .slp file in the autosave folder
-&#8592; + &#8594;: deletes all .slp files in the autosave folder
+&#8595; (down arrow key): copies the latest .slp file in the autosave folder
+
+&#8592; + &#8594; (left and right arrow keys simultaneously): deletes all .slp files in the autosave folder
