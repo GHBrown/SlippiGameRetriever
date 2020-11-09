@@ -34,7 +34,6 @@ SetTimer, waitForClose, -0 ;
 If WinExist("Faster Melee - Slippi") {
 	Down::
 	timeLatest:=0 ;dummy creation time of latest file
-	MsgBox, %autosaveFolder%\*.slp
 	Loop, Files, %autosaveFolder%\*.slp
 	{
 		FileGetTime, curFileCurTime, %A_LoopFileFullPath%, C
@@ -45,9 +44,17 @@ If WinExist("Faster Melee - Slippi") {
 	}
 	originalFullPath:=autosaveFolder . "\" . fileLatest
 	culledFullPath:=culledFolder . "\" . fileLatest
-	MsgBox, %autosaveFolder% 
-	MsgBox, %originalFullPath% 
 	FileCopy, %originalFullPath%, %culledFullPath%, 1
+	return
+
+	Left & Right::
+	FileRemoveDir, %autosaveFolder%, 1
+	FileCreateDir, %autosaveFolder%
+	return
+
+	Right & Left::
+	FileRemoveDir, %autosaveFolder%, 1
+	FileCreateDir, %autosaveFolder%
 	return
 }
 
