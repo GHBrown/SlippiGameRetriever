@@ -1,5 +1,5 @@
 # Slippi Game Retriever
-Creates a hotkey which automatically copies the latest .slp file from the autosave folder to a folder of your choosing and another hotkey which automatically deletes all .slp files in the autosave folder.
+Creates a hotkey which automatically copies the latest `<.slp>` file from the autosave folder to a folder of your choosing and another hotkey which automatically deletes all .slp files in the autosave folder.
 
 The executable provided essentially opens your existing Dolphin.exe while providing the extra hotkey functionality.
 
@@ -11,6 +11,6 @@ The executable provided essentially opens your existing Dolphin.exe while provid
 5. Use SlippiGameRetriever.exe or a shortcut to SlippiGameRetriever.exe as you would use Dolphin.exe or a shortcut to Dolphin.exe. 
 
 ## Hotkeys
-&#8595; (down arrow key): copies the latest .slp file in the autosave folder
+**&#8595;** (down arrow key): copies the latest .slp file in the autosave folder to folder specified in culledFolder.txt
 
-&#8592; + &#8594; (left and right arrow keys simultaneously): deletes all .slp files in the autosave folder
+**&#8592;** + &#8594; (left and right arrow keys simultaneously): deletes all .slp files in the autosave folder
