@@ -18,9 +18,7 @@ SlippiPath:=StrReplace(SlippiPath,"`r`n")
 
 
 ;OPEN SLIPPI (IF NECESSARY)
-If WinExist("Faster Melee - Slippi") {
-}
-Else {
+If !WinExist("Faster Melee - Slippi") {
 	Run, %SlippiPath%
 	WinWait, % "Faster Melee - Slippi"
 }
